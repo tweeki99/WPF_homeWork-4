@@ -1,0 +1,26 @@
+﻿<Window x:Class="TabHw.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TabHw"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl x:Name="webBrowser" SelectionChanged="TabControl_SelectionChanged">
+            <!--<TabItem>
+                <TabItem.Header>
+                    <TextBlock>1 вкладка</TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <WebBrowser Source="https://www.google.ru"/>
+                </TabItem.Content>
+            </TabItem>-->
+            <TabItem x:Name="addTab" >
+                <TabItem.Header>
+                    <TextBlock FontSize="20">+</TextBlock>
+                </TabItem.Header>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
